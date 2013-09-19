@@ -122,6 +122,19 @@ namespace Ninject
             get { return this.Get("ActivationCacheDisabled", false); }
             set { this.Set("ActivationCacheDisabled", value); }
         }
+        
+        /// <summary>
+        /// This is a test for custom settings
+        /// Gets or sets a CustomSetting test
+        /// </summary>
+        /// <value>
+        /// 	<c>true</c> if activation cache is disabled; otherwise, <c>false</c>.
+        /// </value>
+        public bool CustomSetting
+        {
+            get { return this.Get("CustomSetting", false); }
+            set { this.Set("CustomSetting", value); }
+        }
 
         /// <summary>
         /// Gets or sets a value indicating whether Null is a valid value for injection.
